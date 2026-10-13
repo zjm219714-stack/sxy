@@ -77,10 +77,18 @@ set_property IOSTANDARD LVCMOS18 [get_ports SCL]
 set_property IOSTANDARD LVCMOS18 [get_ports sda]
 set_property PULLUP true [get_ports SCL]
 set_property PULLUP true [get_ports sda]
-set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
-set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
-set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
-connect_debug_port dbg_hub/clk [get_nets clk]
+# Debug Hub only exists in runs where an ILA/debug core is present. Synthesis
+# may not have created it yet, so guard these optional properties/connections.
+set dbg_hub_obj [get_debug_cores -quiet dbg_hub]
+if {[llength $dbg_hub_obj] > 0} {
+    set_property C_CLK_INPUT_FREQ_HZ 300000000 $dbg_hub_obj
+    set_property C_ENABLE_CLK_DIVIDER false $dbg_hub_obj
+    set_property C_USER_SCAN_CHAIN 1 $dbg_hub_obj
+    set dbg_clk_net [get_nets -quiet clk]
+    if {[llength $dbg_clk_net] > 0} {
+        connect_debug_port dbg_hub/clk $dbg_clk_net
+    }
+}
 set_property PACKAGE_PIN G18 [get_ports LED_75K]
 set_property PACKAGE_PIN G17 [get_ports LED_192K]
 
