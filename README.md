@@ -10,14 +10,14 @@ The current source configuration and board measurements are:
 |---|---:|---|
 | TDM frame / PCM sample rate (FSYNC) | 96 kHz | Measured; also `BCLK_FREQ / 256` |
 | BCLK | 24.576 MHz | Measured and configured in `ADAU7118.v` |
-| ADAU7118 output clock | 6.144 MHz | Measured on hardware |
-| ADAU7118 decimation | 64x (`0xC0`) | PL I2C initialization value; 96 kHz × 64 = 6.144 MHz |
+| ADAU7118 output clock | 3.072 MHz | Expected from the 32x configuration |
+| ADAU7118 decimation | 32x (`0xC1`) | PL I2C initialization value; 96 kHz × 32 = 3.072 MHz |
 | Enabled PDM clocks / channel pairs | `0x3F` | PL I2C initialization value |
 | Channels processed by localization | 64 | SDK application configuration |
 | FFT frame length | 128 samples | SDK application configuration |
 | FFT bin spacing | 750 Hz | 96,000 / 128 |
 
-The clock path is configured for 196.608 MHz system clock, 24.576 MHz BCLK, and 256 BCLK periods per TDM frame. This gives a nominal 96 kHz FSYNC. The measured ADAU7118 output is 6.144 MHz, consistent with 64x decimation at 96 kHz.
+The clock path is configured for 196.608 MHz system clock, 24.576 MHz BCLK, and 256 BCLK periods per TDM frame. This gives a nominal 96 kHz FSYNC. The expected ADAU7118 output is 3.072 MHz, consistent with 32x decimation at 96 kHz.
 
 ## I2C configuration
 

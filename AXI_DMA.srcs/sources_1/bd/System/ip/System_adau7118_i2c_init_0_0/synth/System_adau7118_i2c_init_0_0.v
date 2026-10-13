@@ -52,7 +52,7 @@
 
 (* X_CORE_INFO = "adau7118_i2c_init,Vivado 2018.3" *)
 (* CHECK_LICENSE_TYPE = "System_adau7118_i2c_init_0_0,adau7118_i2c_init,{}" *)
-(* CORE_GENERATION_INFO = "System_adau7118_i2c_init_0_0,adau7118_i2c_init,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=adau7118_i2c_init,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,CLK_FREQ=245760000,I2C_FREQ=250000,SLAVE_ADDR=0010110,POWER_ON_DELAY_CLKS=1920000,DEC_RATIO_CLK_MAP_VALUE=0xC0,PDM_CLK_CH_ENABLE_VALUE=00111111}" *)
+(* CORE_GENERATION_INFO = "System_adau7118_i2c_init_0_0,adau7118_i2c_init,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=adau7118_i2c_init,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,CLK_FREQ=245760000,I2C_FREQ=250000,SLAVE_ADDR=0010110,POWER_ON_DELAY_CLKS=1920000,DEC_RATIO_CLK_MAP_VALUE=0xC1,PDM_CLK_CH_ENABLE_VALUE=00111111}" *)
 (* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module System_adau7118_i2c_init_0_0 (

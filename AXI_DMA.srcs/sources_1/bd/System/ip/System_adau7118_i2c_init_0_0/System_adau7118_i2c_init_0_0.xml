@@ -311,7 +311,7 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>DEC_RATIO_CLK_MAP_VALUE</spirit:name>
         <spirit:displayName>Dec Ratio Clk Map Value</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.DEC_RATIO_CLK_MAP_VALUE" spirit:bitStringLength="8">0xC0</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.DEC_RATIO_CLK_MAP_VALUE" spirit:bitStringLength="8">0xC1</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>PDM_CLK_CH_ENABLE_VALUE</spirit:name>
@@ -406,7 +406,7 @@
     <spirit:parameter>
       <spirit:name>DEC_RATIO_CLK_MAP_VALUE</spirit:name>
       <spirit:displayName>Dec Ratio Clk Map Value</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.DEC_RATIO_CLK_MAP_VALUE" spirit:bitStringLength="8">0xC0</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.DEC_RATIO_CLK_MAP_VALUE" spirit:bitStringLength="8">0xC1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PDM_CLK_CH_ENABLE_VALUE</spirit:name>

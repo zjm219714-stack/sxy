@@ -6,7 +6,7 @@ module adau7118_i2c_init #(
     parameter integer I2C_FREQ = 250_000,
     parameter [6:0] SLAVE_ADDR = 7'h16,
     parameter integer POWER_ON_DELAY_CLKS = 1_920_000,
-    parameter [7:0] DEC_RATIO_CLK_MAP_VALUE = 8'hC0,
+    parameter [7:0] DEC_RATIO_CLK_MAP_VALUE = 8'hC1,
     parameter [7:0] PDM_CLK_CH_ENABLE_VALUE = 8'h3F
 )(
     input wire clk,
@@ -133,7 +133,7 @@ always @(posedge clk or negedge rst_n) begin
                 end
             end
 
-            // DEC_RATIO_CLK_MAP_VALUE 8'hC0 selects 64x decimation.
+            // DEC_RATIO_CLK_MAP_VALUE 8'hC1 selects 32x decimation.
             S_WR_05: begin
                 i2c_rh_wl  <= 1'b0;
                 i2c_addr   <= ADAU7118_REG_DEC_RATIO_CLK_MAP;

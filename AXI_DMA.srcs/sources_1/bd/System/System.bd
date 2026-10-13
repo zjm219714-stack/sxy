@@ -3049,7 +3049,7 @@
             "value": "196608000"
           },
           "DEC_RATIO_CLK_MAP_VALUE": {
-            "value": "0xC0"
+            "value": "0xC1"
           }
         },
         "reference_info": {
