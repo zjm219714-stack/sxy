@@ -1,0 +1,33 @@
+# Vivado generated state
+AXI_DMA.cache/
+AXI_DMA.runs/
+AXI_DMA.hw/
+AXI_DMA.sim/
+.Xil/
+NA/
+*.jou
+*.log
+*.str
+
+# SDK generated metadata, build output, and exported platform snapshots
+AXI_DMA.sdk/.metadata/
+AXI_DMA.sdk/.sdk/
+AXI_DMA.sdk/.temp/
+AXI_DMA.sdk/*/Debug/
+AXI_DMA.sdk/*/Release/
+AXI_DMA.sdk/*/bootimage/
+AXI_DMA.sdk/*_bsp/
+AXI_DMA.sdk/*_hw_platform_*/
+AXI_DMA.sdk/webtalk/
+
+# Local application builds and Python artifacts
+pc_app_qt/build/
+__pycache__/
+*.py[cod]
+docx_render/
+
+# Local backups and editor state
+backup/
+.codex/
+.claude/
+.agents/
