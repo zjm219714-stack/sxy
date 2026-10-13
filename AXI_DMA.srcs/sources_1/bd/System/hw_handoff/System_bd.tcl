@@ -206,8 +206,8 @@ proc create_root_design { parentCell } {
      return 1
    }
     set_property -dict [ list \
-   CONFIG.BCLK_FREQ {19200000} \
-   CONFIG.SYS_CLK_FREQ {192000000} \
+   CONFIG.BCLK_FREQ {24576000} \
+   CONFIG.SYS_CLK_FREQ {245760000} \
  ] $ADAU7118_0
 
   # Create instance: adau7118_i2c_init_0, and set properties
@@ -221,7 +221,7 @@ proc create_root_design { parentCell } {
      return 1
    }
     set_property -dict [ list \
-   CONFIG.CLK_FREQ {192000000} \
+   CONFIG.CLK_FREQ {245760000} \
    CONFIG.DEC_RATIO_CLK_MAP_VALUE {0xC0} \
  ] $adau7118_i2c_init_0
 

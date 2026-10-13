@@ -19,7 +19,7 @@
 #define NUM_CHANNELS          64
 #define POINTS_PER_FRAME      128
 #define TOTAL_SAMPLES         (NUM_CHANNELS * POINTS_PER_FRAME)
-#define SAMPLING_RATE         75000.0f
+#define SAMPLING_RATE         96000.0f
 #define SOUND_SPEED           343.0f
 #define RX_FRAME_BYTES        (TOTAL_SAMPLES * 8)
 #define GRID_POINTS           1681

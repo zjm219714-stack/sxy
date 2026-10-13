@@ -52,7 +52,7 @@
 
 (* X_CORE_INFO = "ADAU7118,Vivado 2018.3" *)
 (* CHECK_LICENSE_TYPE = "System_ADAU7118_0_0,ADAU7118,{}" *)
-(* CORE_GENERATION_INFO = "System_ADAU7118_0_0,ADAU7118,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=ADAU7118,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,SYS_CLK_FREQ=192000000,BCLK_FREQ=19200000}" *)
+(* CORE_GENERATION_INFO = "System_ADAU7118_0_0,ADAU7118,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=ADAU7118,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,SYS_CLK_FREQ=245760000,BCLK_FREQ=24576000}" *)
 (* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module System_ADAU7118_0_0 (
@@ -156,8 +156,8 @@ output wire m_axis_tvalid;
 input wire m_axis_tready;
 
   ADAU7118 #(
-    .SYS_CLK_FREQ(192000000),
-    .BCLK_FREQ(19200000)
+    .SYS_CLK_FREQ(245760000),
+    .BCLK_FREQ(24576000)
   ) inst (
     .sys_clk(sys_clk),
     .sys_rst_n(sys_rst_n),

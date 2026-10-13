@@ -2,7 +2,7 @@
 
 module adau7118_i2c_init #(
     // This sequencer actively configures the ADAU7118 after power-on.
-    parameter integer CLK_FREQ = 192_000_000,
+    parameter integer CLK_FREQ = 196_608_000,
     parameter integer I2C_FREQ = 250_000,
     parameter [6:0] SLAVE_ADDR = 7'h16,
     parameter integer POWER_ON_DELAY_CLKS = 1_920_000,

@@ -155,8 +155,8 @@ output wire m_axis_tvalid;
 input wire m_axis_tready;
 
   ADAU7118 #(
-    .SYS_CLK_FREQ(192000000),
-    .BCLK_FREQ(19200000)
+    .SYS_CLK_FREQ(245760000),
+    .BCLK_FREQ(24576000)
   ) inst (
     .sys_clk(sys_clk),
     .sys_rst_n(sys_rst_n),

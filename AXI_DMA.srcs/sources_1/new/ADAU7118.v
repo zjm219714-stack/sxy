@@ -1,9 +1,9 @@
 `timescale 1ns / 1ps
 
 module ADAU7118 #(
-    // 192 MHz / 10 = 19.2 MHz BCLK; 19.2 MHz / 256 = 75 kHz LRCLK.
-    parameter integer SYS_CLK_FREQ = 192_000_000,
-    parameter integer BCLK_FREQ    = 19_200_000
+    // 196.608 MHz / 8 = 24.576 MHz BCLK; 24.576 MHz / 256 = 96 kHz LRCLK.
+    parameter integer SYS_CLK_FREQ = 196_608_000,
+    parameter integer BCLK_FREQ    = 24_576_000
 )(
     (* X_INTERFACE_PARAMETER = "ASSOCIATED_BUSIF m_axis, ASSOCIATED_RESET sys_rst_n" *)
     input  wire          sys_clk,
@@ -66,8 +66,8 @@ localparam integer CHANNEL_COUNT = 8;
 // ADAU7118 uses 256 BCLK periods for one TDM frame.
 // The tolerance also accepts a measured BCLK of about 49.12 MHz for 192 kHz.
 localparam integer SAMPLE_RATE_EST_HZ = BCLK_FREQ / FRAME_BCLKS;
-localparam integer RATE_75K_MIN_HZ    = 70_000;
-localparam integer RATE_75K_MAX_HZ    = 80_000;
+localparam integer RATE_75K_MIN_HZ    = 90_000;
+localparam integer RATE_75K_MAX_HZ    = 102_000;
 localparam integer RATE_192K_MIN_HZ   = 180_000;
 localparam integer RATE_192K_MAX_HZ   = 205_000;
 
@@ -80,7 +80,7 @@ assign LED_192K = sys_rst_n &&
                   (SAMPLE_RATE_EST_HZ >= RATE_192K_MIN_HZ) &&
                   (SAMPLE_RATE_EST_HZ <= RATE_192K_MAX_HZ);
 
-// SYS_CLK_FREQ / (2 * BCLK_HALF_DIV) = 19.2 MHz BCLK.
+// SYS_CLK_FREQ / (2 * BCLK_HALF_DIV) = 24.576 MHz BCLK.
 reg [31:0] bclk_div_cnt;
 reg BCLK;
 

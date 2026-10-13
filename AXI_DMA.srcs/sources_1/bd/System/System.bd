@@ -3046,7 +3046,7 @@
         "xci_name": "System_adau7118_i2c_init_0_0",
         "parameters": {
           "CLK_FREQ": {
-            "value": "192000000"
+            "value": "196608000"
           },
           "DEC_RATIO_CLK_MAP_VALUE": {
             "value": "0xC0"
@@ -3108,10 +3108,10 @@
         "xci_name": "System_ADAU7118_0_0",
         "parameters": {
           "BCLK_FREQ": {
-            "value": "19200000"
+            "value": "24576000"
           },
           "SYS_CLK_FREQ": {
-            "value": "192000000"
+            "value": "196608000"
           }
         },
         "reference_info": {

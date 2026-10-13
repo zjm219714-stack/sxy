@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 module I2C_driver #(
-    parameter integer CLK_FREQ   = 192_000_000,
+    parameter integer CLK_FREQ   = 196_608_000,
     parameter integer I2C_FREQ   = 250_000,
     parameter [6:0]   SLAVE_ADDR = 7'h16
 )

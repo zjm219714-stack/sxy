@@ -77,7 +77,7 @@ output wire init_error;
 output wire busy;
 
   adau7118_i2c_init #(
-    .CLK_FREQ(192000000),
+    .CLK_FREQ(245760000),
     .I2C_FREQ(250000),
     .SLAVE_ADDR(7'B0010110),
     .POWER_ON_DELAY_CLKS(1920000),

@@ -751,12 +751,12 @@
       <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
         <spirit:name>SYS_CLK_FREQ</spirit:name>
         <spirit:displayName>Sys Clk Freq</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.SYS_CLK_FREQ">192000000</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.SYS_CLK_FREQ">245760000</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>BCLK_FREQ</spirit:name>
         <spirit:displayName>Bclk Freq</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.BCLK_FREQ">19200000</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.BCLK_FREQ">24576000</spirit:value>
       </spirit:modelParameter>
     </spirit:modelParameters>
   </spirit:model>
@@ -783,12 +783,12 @@
     <spirit:parameter>
       <spirit:name>SYS_CLK_FREQ</spirit:name>
       <spirit:displayName>Sys Clk Freq</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SYS_CLK_FREQ">192000000</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SYS_CLK_FREQ">245760000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>BCLK_FREQ</spirit:name>
       <spirit:displayName>Bclk Freq</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BCLK_FREQ">19200000</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BCLK_FREQ">24576000</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
